@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock and Tasks | Bekzod</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <audio src="assets/coin-upaif-14631.mp3" id="victorySound"></audio>
+    <div class="container">
+        <video autoplay muted loop class="bg-video">
+            <source src="assets/summer-bg (1).mp4" type="video/mp4">
+          </video>
+          <div class="holder">
+              <div class="menu">
+                <div class="sections">
+                    <div class="img_effect"><a href="#" onclick="showDate()"><img src="assets/main menu.png" class="main-img"></a></div>
+                    <div class="img_effect" onclick="switchPage()"><a href="#"><img src="assets/js png.png" class="js-img"></a></div>
+                </div>
+                <button class="news" onclick="newsPage()">News</button>
+                  <audio src="assets/lofi.mp3" loop id="audio"></audio>
+              </div>
+              <div class="box" id="box">
+                  <img src="assets/play.png" class="music" id="play" onclick="playAudio()">
+                  <img src="assets/pause.png" class="music new" id="pause" onclick="pauseAudio()">
+                  <h2 class="title">
+                    <h1 style="font-size: 20px;" id="dateTitle">Soat:</h1>
+                    <h2 class="time" id="time">00:00:00</h2>
+                    <h2 class="date" id="date"></h2>
+                    <h3 style="color: rgb(37, 230, 37);" class="day" id="day">hafta: <span class="week" style="color: white;"></span></h3>
+                    <button id="sana" onclick="showDate()">Sanani Ko'rish</button>
+                    <button id="back" class="back" onclick="showTime()">Ortga Qaytish</button>
+
+                    <!-- 2 page -->
+                     <div class="hider" id="hider">
+                        <h2>Ishlangan Masalalar: <span style="color: aqua;">7</span></h2>
+                        <h2>hozirgi kyu: <span style="color: aqua;">7</span></h2>
+                        <img src="assets/profilee.png">
+                        <h2 style="color: aqua;">👇Tasdiqlash uchun <span style="color: rgb(0, 255, 0);">profilni linki!</span> 👇</h2>
+                        <a href="https://www.codewars.com/users/Spacs21" target="_blank"><button class="gamer-button">Profilga O'tish</button></a>
+                        <p>(hamma coldarning outputi consolda!)</p>
+                     </div>
+                     <div class="hider_news" id="news">
+                        <h2>Yangiliklar!</h2>
+                        <h3>+JS'da page almashtirish</h3>
+                        <h3>+Function TimeOut</h3>
+                        <h3>+New Date</h3>
+                        <h3>+Menuda uzgarishlar</h3>
+                        <h3>+Responsive</h3>
+                        <h3>+Audio</h3>
+                     </div>
+                  </h2>
+                  </div>
+              </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
